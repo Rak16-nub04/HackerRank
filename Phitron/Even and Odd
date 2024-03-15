@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+    int n,v;
+    int sumEVEN=0;
+    int sumODD=0;
+
+    scanf("%d",&n);
+
+    for(int i=1;i<=n;i++){
+        scanf("%d",&v);
+
+        if(v%2==0){
+           sumEVEN=sumEVEN+v;
+        }
+
+        else
+            sumODD=sumODD+v;
+    }
+    printf("%d ",sumEVEN);
+        printf("%d",sumODD);
+
+        return 0;
+}
